@@ -1,7 +1,6 @@
 .home {
+    position: relative;
     width: 100%;
-    height: 1050px;
-    padding-top: 63px;
-    background: url(../images/Trailer.jpg) no-repeat;
-    background-size: cover;
+    max-height: 1050px;
+    overflow: hidden;
 }

@@ -4,11 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta charset="utf-8"/>
-    <title>Vertex</title>
+    <title>VERTEX</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;amp;subset=cyrillic" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mb.YTPlayer.css" media="all" type="text/css"/>
     <link rel="stylesheet" href="css/styles.css" type="text/css"/>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
   </head>
@@ -18,10 +19,10 @@
         <section class="home">
           <header class="header">
             <div class="header__inner">
-              <nav class="header__nav"><a class="logo" href="#"><img class="logo__img" src="images/logo.png" alt="logo"/></a><a class="header__button" href="#">GET NOW  </a></nav>
+              <nav class="header__nav"><a class="logo" href="#"><img class="logo__img" src="images/logo.png" alt="logo"/></a><a class="header__button" href="https://discordapp.com/invite/dXNrHyB" target="_blanc">GET NOW  </a></nav>
             </div>
           </header>
-          <div class="home__inner"></div>
+          <div class="player" id="video" data-property="{videoURL:'https://youtu.be/it5_inpbUO4',containment:'self',autoPlay:true, showYTLogo:false, mute:true, loop:true, startAt:0, opacity:1}"></div>
         </section>
         <section class="about">
           <div class="content">
@@ -93,7 +94,7 @@
         </section>
         <section class="join">
           <div class="content">
-            <div class="join__inner"><a class="join__link" href="#"><img class="join__link-img" src="images/join.png" alt="join us"/></a></div>
+            <div class="join__inner"><a class="join__link" href="https://discordapp.com/invite/dXNrHyB" target="_blanc"><img class="join__link-img" src="images/join.png" alt="join us"/></a></div>
           </div>
         </section>
         <section class="contact-us">
@@ -124,6 +125,8 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/video.js"></script>
   </body>
 </html>
