@@ -1,0 +1,60 @@
+.header {
+    width: 100%;
+    &__inner {
+        width: 100%;
+        max-width: 1830px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    &__nav {
+        width: 100%;
+        @include space-between-and-items-center;
+    }
+    &__button {
+        padding: 16px 61px;
+        display: flex;
+        flex-shrink: 0;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: -0.6px;
+        border: 4px $red solid;
+        background-color: $elements-bg;
+        &:hover {
+            color: $red;
+            background: $black;
+            transition: .5s;
+        }
+    }
+}
+
+.logo {
+    width: 100%;
+    max-width: 613px;
+    margin-right: 50px;
+    &__img {
+        width: 100%;
+    }
+    &:hover {
+        opacity: .7;
+        transform: scale(.95);
+        transition: .5s;
+    }
+}
+
+@media (max-width: 650px) {
+    .header__button {
+        padding: 12px 50px;
+        font-size: 20px;
+        border-width: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__button {
+        padding: 10px 40px;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,27 @@
+include ../node_modules/bemto.pug/bemto
+
+html
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        meta(charset='utf-8')
+        title Vertex
+        link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+        link(rel='stylesheet', href='css/styles.css', type='text/css')
+        link(rel="shortcut icon" href="images/favicon.ico" type="image/x-icon")
+    body
+      div.wrapper
+        main.main
+          include includes/_home
+          include includes/_about
+          include includes/_features
+          include includes/_screenshots
+          include includes/_join
+          include includes/_contact-us
+        include includes/_footer
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+      script(src="js/slider.js")
