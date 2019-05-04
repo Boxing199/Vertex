@@ -15,7 +15,10 @@
         @include space-between-and-items-center;
     }
     &__button {
-        padding: 16px 61px;
+        position: fixed;
+        right: 3%;
+        top: 80px;
+        padding: 16px 55px;
         display: flex;
         flex-shrink: 0;
         color: #fff;
@@ -26,6 +29,7 @@
         letter-spacing: -0.6px;
         border: 4px $red solid;
         background-color: $elements-bg;
+        z-index: 9999;
         &:hover {
             color: $red;
             background: $black;
@@ -47,25 +51,48 @@
         transition: .5s;
     }
 }
+
+@media (max-width: 920px) {
+    .logo {
+        max-width: 320px;
+    }
+    .header__button {
+        top: 56px;
+    }
+}
 @media (max-width: 720px) {
     .header {
         padding-top: 35px;
+        &__button {
+            top: 28px;
+        }
     }
 }
 @media (max-width: 650px) {
     .header {
         padding-top: 20px;
         &__button {
+            top: 7px;
             padding: 12px 50px;
             font-size: 20px;
             border-width: 2px;
         }
     }
+    .logo {
+        max-width: 150px;
+    }
 }
 
 @media (max-width: 480px) {
     .header__button {
+        top: 13px;
         padding: 10px 40px;
-        font-size: 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo {
+        max-width: 125px;
     }
 }

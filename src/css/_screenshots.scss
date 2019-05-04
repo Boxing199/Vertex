@@ -56,6 +56,13 @@
     padding: 10px 0;
 }
 
+.screenshots__min-sl .slick-current .screenshots__min-sl-slide img,
+.screenshots__min-sl img:hover {
+    box-shadow: 0 0 12px 5px rgba($red, .4);
+    transform: scale(.95);
+    transition: .5s;
+}
+
 @media (max-width: 1280px) {
     .screenshots__inner {
         padding-bottom: 150px;
