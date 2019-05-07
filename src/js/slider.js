@@ -16,7 +16,7 @@ $('.screenshots__sl').slick({
             breakpoint: 951,
             settings: {
                 vertical: false,
-                arrows: false,
+                arrows: true,
                 slidesToShow: 3
               }
         },
@@ -24,9 +24,17 @@ $('.screenshots__sl').slick({
             breakpoint: 851,
             settings: {
                 vertical: false,
-                arrows: false,
+                arrows: true,
                 slidesToShow: 2
               }
-        }
+        },
+        {
+          breakpoint: 579,
+          settings: {
+              vertical: false,
+              arrows: true,
+              slidesToShow: 1
+            }
+      }
     ]
   });
