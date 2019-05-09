@@ -4,8 +4,8 @@ jQuery(document).ready(function($) {
     var str = $(this).serialize();
      
     $.ajax({
-        type: "POST",
-        url: "http://httpbin.org/post",
+        type: "GET",
+        url: "http://httpbin.org/get",
         data: str,
         success: function() {
         $("#dialog").removeClass("display-none");
