@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#contact-us-form").submit(function(o){return o.stopPropagation(),$("#dialog").removeClass("display-none"),!1}),$("#dialog").click(function(){$("#dialog").addClass("display-none")})});

@@ -3,11 +3,19 @@ section.contact-us
     div.contact-us__inner
       div.title__wrapper
         h2.title.contact-us__title CONTACT US
-      form.contact-us__form(action="", method="get")
+      form#contact-us-form.contact-us__form(action="", method="get")
         input.contact-us__form-elem.contact-us__form-input(type="text" name="name" placeholder="Name")
         input.contact-us__form-elem.contact-us__form-input(type="email", name="email" placeholder="Mail" required)
         input.contact-us__form-elem(type="text" name="subject" placeholder="Subject")
         textarea.contact-us__form-elem.contact-us__textarea(name="text" placeholder="This message is focused.Here a user will type all he or she wants. However, all the characters should be escaped, e.g.., JS-code will be a plain string, etc.")
         input.contact-us__button(type="submit", value="SEND")
+div#dialog.dialog__wrapper.display-none
+  div.dialog__inner
+    div.dialog
+      div.dialog__description
+        p Your message has been successfully sent.
+        p Thank you for reaching us!
+      div.dialog__image
+        img(src="images/dialog-img.png" alt="dialog image")        
 
           

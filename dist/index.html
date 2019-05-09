@@ -103,7 +103,7 @@
               <div class="title__wrapper">
                 <h2 class="title contact-us__title">CONTACT US</h2>
               </div>
-              <form class="contact-us__form" action="" method="get">
+              <form class="contact-us__form" id="contact-us-form" action="" method="get">
                 <input class="contact-us__form-elem contact-us__form-input" type="text" name="name" placeholder="Name"/>
                 <input class="contact-us__form-elem contact-us__form-input" type="email" name="email" placeholder="Mail" required="required"/>
                 <input class="contact-us__form-elem" type="text" name="subject" placeholder="Subject"/>
@@ -113,6 +113,17 @@
             </div>
           </div>
         </section>
+        <div class="dialog__wrapper display-none" id="dialog">
+          <div class="dialog__inner">
+            <div class="dialog">
+              <div class="dialog__description">
+                <p>Your message has been successfully sent.</p>
+                <p>Thank you for reaching us!</p>
+              </div>
+              <div class="dialog__image"><img src="images/dialog-img.png" alt="dialog image"/></div>
+            </div>
+          </div>
+        </div>
       </main>
       <footer class="footer">
         <div class="content footer__content">
@@ -128,5 +139,6 @@
     <script src="js/jquery.mb.YTPlayer.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/video.js"></script>
+    <script src="js/dialog.js"></script>
   </body>
 </html>
