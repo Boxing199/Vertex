@@ -8,7 +8,8 @@ jQuery(document).ready(function($) {
         url: "http://httpbin.org/get",
         data: str,
         success: function() {
-        $("#dialog").removeClass("display-none");
+            $("#contact-us-form")[0].reset();
+            $("#dialog").removeClass("display-none");         
         }
     });
     return false;
@@ -17,4 +18,4 @@ jQuery(document).ready(function($) {
         $("#dialog").addClass("display-none");
     });
 });
-    
+    console.log($("#contact-us-form").children());
