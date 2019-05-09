@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
      
     $.ajax({
         type: "POST",
-        url: "",
+        url: "http://httpbin.org/post",
         data: str,
         success: function() {
         $("#dialog").removeClass("display-none");
