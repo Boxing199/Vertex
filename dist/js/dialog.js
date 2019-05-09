@@ -18,4 +18,3 @@ jQuery(document).ready(function($) {
         $("#dialog").addClass("display-none");
     });
 });
-    console.log($("#contact-us-form").children());
