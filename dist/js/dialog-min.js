@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#contact-us-form").submit(function(o){return o.stopPropagation(),$("#dialog").removeClass("display-none"),!1}),$("#dialog").click(function(){$("#dialog").addClass("display-none")})});
+jQuery(document).ready(function(a){a("#contact-us-form").submit(function(){var n=a(this).serialize();return a.ajax({type:"POST",url:"",data:n,success:function(){a("#dialog").removeClass("display-none")}}),!1}),a("#dialog").click(function(){a("#dialog").addClass("display-none")})});
